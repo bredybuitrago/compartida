@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WSCertificados" targetNamespace="http://www.nuevaeps.com.co/certificados/1.0">
+  <wsdl:types>
+<xsd:schema targetNamespace="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			
+  <xsd:include schemaLocation="http://rhafuseqanodo1.nuevaeps.com.co:8181/cxf/certificados?xsd=../../../schemas/canonicos/tecnicos/cabecerasNeps.xsd"/>
+		
+</xsd:schema>
+<xsd:schema targetNamespace="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			
+  <xsd:include schemaLocation="http://rhafuseqanodo1.nuevaeps.com.co:8181/cxf/certificados?xsd=../../../schemas/canonicos/tecnicos/fault.xsd"/>
+		
+</xsd:schema>
+<xsd:schema targetNamespace="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			
+  <xsd:include schemaLocation="http://rhafuseqanodo1.nuevaeps.com.co:8181/cxf/certificados?xsd=../../../schemas/mensajes/mde/certificadoafiliado/consultarCertificadoAfiliado.xsd"/>
+		
+</xsd:schema>
+<xsd:schema xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			
+  <xsd:import namespace="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" schemaLocation="http://192.168.96.6:6080/services/WS_Certificados?XSD=1&amp;version=1.0">
+			</xsd:import>
+		
+</xsd:schema>
+<xsd:schema targetNamespace="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:ns1="http://www.nuevaeps.com.co/mensajes/pac/certificadoafiliado/consultar/1.0" xmlns:ns2="http://www.nuevaeps.com.co/canonicos/tecnicos/cabecera/1.0" xmlns:ns3="http://www.nuevaeps.com.co/canonicos/tecnicos/fault/1.0" xmlns:ns4="http://www.nuevaeps.com.co/mensajes/mde/certificadoafiliado/consultar/1.0" xmlns:ns5="http://www.nuevaeps.com.co/mensajes/mde/certificadosemanascotizadas/consultar/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.nuevaeps.com.co/certificados/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			
+  <xsd:include schemaLocation="http://rhafuseqanodo1.nuevaeps.com.co:8181/cxf/certificados?xsd=../../../schemas/mensajes/mde/certificadosemanascotizadas/consultarCertificadoSemanasCotizadas.xsd"/>
+		
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarCertificadoAfiliadoResponse">
+    <wsdl:part element="ns4:consultarCertificadoAfiliadoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoFault">
+    <wsdl:part name="parameters" type="ns3:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoRequest">
+    <wsdl:part element="ns4:consultarCertificadoAfiliadoRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoPacFault">
+    <wsdl:part name="parameters" type="ns3:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoSemanasCotizadasFault">
+    <wsdl:part name="parameters" type="ns3:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoPacRequest">
+    <wsdl:part element="ns1:consultarCertificadoAfiliadoPacRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoSemanasCotizadasResponseHeader">
+    <wsdl:part name="response_header" type="ns2:cabeceraResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoSemanasCotizadasResponse">
+    <wsdl:part element="ns5:consultarCertificadoSemanasCotizadasResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoResponseHeader">
+    <wsdl:part name="response_header" type="ns2:cabeceraResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoPacResponseHeader">
+    <wsdl:part name="response_header" type="ns2:cabeceraResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoRequestHeader">
+    <wsdl:part name="request_header" type="ns2:cabeceraRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoPacRequestHeader">
+    <wsdl:part name="request_header" type="ns2:cabeceraRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoSemanasCotizadasRequestHeader">
+    <wsdl:part name="request_header" type="ns2:cabeceraRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoAfiliadoPacResponse">
+    <wsdl:part element="ns1:consultarCertificadoAfiliadoPacResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCertificadoSemanasCotizadasRequest">
+    <wsdl:part element="ns5:consultarCertificadoSemanasCotizadasRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WSCertificados">
+    <wsdl:operation name="consultarCertificadoAfiliadoPac">
+<wsdl:documentation>Método para consultar el certificado de un afiliado PAC.</wsdl:documentation>
+      <wsdl:input message="tns:consultarCertificadoAfiliadoPacRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarCertificadoAfiliadoPacResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:consultarCertificadoAfiliadoPacFault" name="parameters">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCertificadoAfiliado">
+<wsdl:documentation>Método para consultar el certificado de un afiliado.</wsdl:documentation>
+      <wsdl:input message="tns:consultarCertificadoAfiliadoRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarCertificadoAfiliadoResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:consultarCertificadoAfiliadoFault" name="parameters">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCertificadoSemanasCotizadas">
+<wsdl:documentation>Método para consultar el certificado de semanas cotizadas para un afiliado.</wsdl:documentation>
+      <wsdl:input message="tns:consultarCertificadoSemanasCotizadasRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarCertificadoSemanasCotizadasResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:consultarCertificadoSemanasCotizadasFault" name="parameters">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSCertificadosSOAP" type="tns:WSCertificados">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="consultarCertificadoAfiliadoPac">
+      <soap:operation soapAction="http://www.nuevaeps.com.co/afiliado/certificado/WSCertificados/consultarCertificadoAfiliadoPac"/>
+      <wsdl:input>
+        <soap:header message="tns:consultarCertificadoAfiliadoPacRequestHeader" part="request_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message="tns:consultarCertificadoAfiliadoPacResponseHeader" part="response_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCertificadoAfiliado">
+      <soap:operation soapAction="http://www.nuevaeps.com.co/afiliado/certificado/WSCertificados/consultarCertificadoAfiliado"/>
+      <wsdl:input>
+        <soap:header message="tns:consultarCertificadoAfiliadoRequestHeader" part="request_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message="tns:consultarCertificadoAfiliadoResponseHeader" part="response_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCertificadoSemanasCotizadas">
+      <soap:operation soapAction="http://www.nuevaeps.com.co/afiliado/certificado/WSCertificados/consultarCertificadoSemanasCotizadas"/>
+      <wsdl:input>
+        <soap:header message="tns:consultarCertificadoSemanasCotizadasRequestHeader" part="request_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message="tns:consultarCertificadoSemanasCotizadasResponseHeader" part="response_header" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSCertificados">
+<wsdl:documentation>Servicio encargado de gestionar la información de certificados para un afiliado.</wsdl:documentation>
+    <wsdl:port binding="tns:WSCertificadosSOAP" name="WSCertificadosSOAP">
+      <soap:address location="http://192.168.96.6:6080/services/WS_Certificados?version=1.0"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
